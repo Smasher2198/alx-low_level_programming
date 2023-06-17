@@ -5,11 +5,12 @@
  */
 int main(void)
 {
-	char x;
+	char alp[26] = "abcdefghijklmnopqrstuvwxyz";
+	int i;
 
-	for (x = 'a'; x <= 'z'; x++)
+	for (i = 0; i <= 26; i++)
 	{
-		putchar(a);
+		putchar(alp(i));
 	}
 	putchar("\n");
 	return (0);
