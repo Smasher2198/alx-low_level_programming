@@ -6,6 +6,7 @@
 int main(void)
 {
 	char x = 'a';
+	int x
 
 	for (x = 'a'; x <= 'z'; x++)
 	{
