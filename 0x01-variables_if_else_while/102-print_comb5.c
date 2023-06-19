@@ -7,18 +7,21 @@ int main(void)
 {
 	int n, m;
 
-	for (n = 48; n < 58; n++)
+	for (n = 0; n < 100; n++)
 	{
-		for (m = 49; m < 58; m++)
+		for (m = 0; m < 100; m++)
 		{
-			if (m >= n)
+			if (n < m)
 			{
-				putchar(n);
-				putchar(m);
-				if (n != 57 || m != 58)
+				putchar((n / 10) + 48);
+				putchar((n % 10) + 48);
+				putchar(' ');
+				putchar((m / 10) + 48);
+				putchar((m % 10) + 48);
+				if (n != 98 || m != 99)
 				{
-					putchar(' ');
 					putchar(',');
+					putchar(' ');
 				}
 			}
 		}
