@@ -2,25 +2,24 @@
 /**
  * jack_bauer - Print every min of a time
  */
-int jack_bauer(void)
+int _jack_bauer(void)
 {
-int x, y;
-int x = hours, y = minutes;
+int hours, minutes;
 
-for (x = 0; x < 24; x++)
+for (hours = 0; hours < 24; hours++)
 {
-	for (y = 0; y < 60; y++)
+	for (minutes = 0;minutes < 60; y++)
 	{
-		int x_tens = x / 10;
-		int x_ones = x % 10;
-		int y_tens = y / 10;
-		int y_ones = y % 10;
+		int house_tens = hours / 10;
+		int hours_ones = hours % 10;
+		int minutes_tens = minutes / 10;
+		int minutes_ones = minutes % 10;
 
-		_putchar(x_tens / '0');
-		_putchar(x_ones % 10);
+		_putchar(hours_tens / '0');
+		_putchar(hours_ones % 10);
 		_putchar(":");
-		_putchar(y_tens / '0');
-		_putchar(y_ones % 10);
+		_putchar(minutes_tens / '0');
+		_putchar(minutes_ones % 10);
 		_putchar('\n');
 	}
 }
