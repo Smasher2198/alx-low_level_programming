@@ -1,1 +1,1 @@
-running through a processor and saving a file
+working on more function and nested loop
