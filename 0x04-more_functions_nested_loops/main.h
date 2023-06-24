@@ -21,6 +21,8 @@ void print_square(int size);
 
 void FizzBuzz(void);
 
+void print_triangle(int size);
+
 int _isupper(int c);
 
 #endif
