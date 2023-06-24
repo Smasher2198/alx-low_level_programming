@@ -2,12 +2,12 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * FizzBuzz - Entry point
  * print 1 to 100 in fizzbuzz rule
  *
  * Return: always 0
  */
-int main(void)
+void FizzBuzz(void)
 {
 	int i;
 
@@ -21,7 +21,7 @@ int main(void)
 			printf("Buzz");
 		else
 			printf("%i", i);
-		if (i <100)
+		if (i < 100)
 			printf(" ");
 	}
 	printf('\n');
